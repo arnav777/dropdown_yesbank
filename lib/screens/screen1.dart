@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:menu_button/menu_button.dart';
+import 'package:dropdown_yesbank/usages/normal-menu-button.dart';
 
 class ScreenOne extends StatefulWidget {
   @override
@@ -97,8 +98,8 @@ class _ScreenOneState extends State<ScreenOne> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: <Widget>[
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 10, 45, 10),
-                        child: Text('oh my my'),
+                        padding: const EdgeInsets.only(bottom: 12),
+                        child: MyHomePage(),
                       ),
                     ],
                   ),

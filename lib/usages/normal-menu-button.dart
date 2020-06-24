@@ -1,6 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:menu_button/menu_button.dart';
 
+class MyHomePage extends StatefulWidget {
+  MyHomePage({Key key, this.title}) : super(key: key);
+
+  final String title;
+
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    final ThemeData theme = Theme.of(context);
+
+    return Container(
+      child: Padding(
+        padding: const EdgeInsets.fromLTRB(0, 5, 28, 5),
+        child: Padding(
+          padding: const EdgeInsets.only(bottom: 12),
+          child: NormalMenuButton(
+            theme: theme,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class NormalMenuButton extends StatefulWidget {
   const NormalMenuButton({
     Key key,
@@ -17,9 +45,11 @@ class _NormalMenuButtonState extends State<NormalMenuButton> {
   String selectedKey;
 
   List<String> keys = [
-    'Low',
-    'Medium',
-    'High',
+    'Overviewy',
+    'Components',
+    'Technical',
+    'News',
+    'Historical Data',
   ];
 
   @override
@@ -31,10 +61,10 @@ class _NormalMenuButtonState extends State<NormalMenuButton> {
   @override
   Widget build(BuildContext context) {
     final Widget normalChildButton = SizedBox(
-      width: 93,
+      width: 143,
       height: 40,
       child: Padding(
-        padding: const EdgeInsets.only(left: 16, right: 11),
+        padding: const EdgeInsets.only(left: 18, right: 18),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: <Widget>[
@@ -45,7 +75,7 @@ class _NormalMenuButtonState extends State<NormalMenuButton> {
               ),
             ),
             SizedBox(
-              width: 12,
+              width: 8,
               height: 17,
               child: FittedBox(
                 fit: BoxFit.fill,
@@ -63,7 +93,7 @@ class _NormalMenuButtonState extends State<NormalMenuButton> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Padding(
+        /*Padding(
           padding: const EdgeInsets.only(bottom: 12.0),
           child: Text(
             'Normal usage of menu button',
@@ -71,7 +101,7 @@ class _NormalMenuButtonState extends State<NormalMenuButton> {
               fontSize: 18,
             ),
           ),
-        ),
+        ),*/
         MenuButton(
           child: normalChildButton,
           items: keys,
