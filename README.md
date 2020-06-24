@@ -1,6 +1,6 @@
 # dropdown_yesbank
 
-A new Flutter application.
+Different types of dropdown menus along with project code backup
 
 ## Getting Started
 
