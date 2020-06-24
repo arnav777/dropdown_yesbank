@@ -12,6 +12,7 @@ class _ScreenOneState extends State<ScreenOne> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: SafeArea(
           child: Stack(
@@ -105,6 +106,16 @@ class _ScreenOneState extends State<ScreenOne> {
                   ),
                   SizedBox(
                     height: 12,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                        width: 300,
+                        height: 300,
+                        child: Image.asset('assets/images/yesbank.jpg'),
+                      ),
+                    ],
                   ),
                 ],
               ),

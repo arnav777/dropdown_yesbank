@@ -1,5 +1,7 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:menu_button/menu_button.dart';
+import 'package:dropdown_yesbank/usages/normal-menu-button.dart';
 
 class ScreenThree extends StatefulWidget {
   @override
@@ -10,6 +12,7 @@ class _ScreenThreeState extends State<ScreenThree> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: SafeArea(
           child: Stack(
@@ -96,13 +99,23 @@ class _ScreenThreeState extends State<ScreenThree> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: <Widget>[
                       Padding(
-                        padding: const EdgeInsets.fromLTRB(0, 10, 45, 10),
-                        child: Text('oh my my'),
+                        padding: const EdgeInsets.only(bottom: 12),
+                        child: MyHomePage(),
                       ),
                     ],
                   ),
                   SizedBox(
                     height: 12,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Container(
+                        width: 280,
+                        height: 280,
+                        child: Image.asset('assets/images/yesbank2.png'),
+                      ),
+                    ],
                   ),
                 ],
               ),
