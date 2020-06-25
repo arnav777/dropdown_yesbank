@@ -1,10 +1,10 @@
 # dropdown_yesbank
 
-Different types of dropdown menus along with project code backup
+dropdown menu in Yes Bank
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project contains normal DropDown Menu Button with Four Screens of Yes Bank.
 
 A few resources to get you started if this is your first Flutter project:
 
@@ -18,7 +18,8 @@ samples, guidance on mobile development, and a full API reference.
 
 ZIP File-
 
-[attachments.zip](https://github.com/arnav777/dropdown_yesbank/files/4828247/attachments.zip)
+Zip file has the screenshots in case you want to preview it by downloading
+[attachments.zip](https://github.com/arnav777/dropdown_yesbank/files/4828247/attachments.zip).
 
 
 ScreenShots -
