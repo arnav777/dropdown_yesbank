@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Menu Button Example',
-      home: ScreenFour(),
+      home: ScreenOne(),
     );
   }
 }
