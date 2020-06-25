@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:menu_button/menu_button.dart';
 
+// Created a class MyHomePage and placed the DropDown menu box
+
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
-
+  
   final String title;
 
   @override
@@ -29,6 +31,8 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
+// made a Normal Button Class for reusability purpose
+
 class NormalMenuButton extends StatefulWidget {
   const NormalMenuButton({
     Key key,
@@ -44,6 +48,8 @@ class NormalMenuButton extends StatefulWidget {
 class _NormalMenuButtonState extends State<NormalMenuButton> {
   String selectedKey;
 
+   // Made a list of keys of string type to place the 5 page categories
+  
   List<String> keys = [
     'Overviewy',
     'Components',
@@ -61,7 +67,9 @@ class _NormalMenuButtonState extends State<NormalMenuButton> {
   @override
   Widget build(BuildContext context) {
     final Widget normalChildButton = SizedBox(
-      width: 143,
+      
+      // specifying the width and height of the DropDown Menu Box
+      width: 143,  
       height: 40,
       child: Padding(
         padding: const EdgeInsets.only(left: 18, right: 18),
@@ -93,15 +101,7 @@ class _NormalMenuButtonState extends State<NormalMenuButton> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        /*Padding(
-          padding: const EdgeInsets.only(bottom: 12.0),
-          child: Text(
-            'Normal usage of menu button',
-            style: widget.theme.textTheme.headline2.copyWith(
-              fontSize: 18,
-            ),
-          ),
-        ),*/
+        
         MenuButton(
           child: normalChildButton,
           items: keys,
