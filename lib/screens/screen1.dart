@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:menu_button/menu_button.dart';
 import 'package:dropdown_yesbank/usages/normal-menu-button.dart';
 
+// SCREEN ONE
+
 class ScreenOne extends StatefulWidget {
   @override
   _ScreenOneState createState() => _ScreenOneState();
@@ -14,7 +16,7 @@ class _ScreenOneState extends State<ScreenOne> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: SafeArea(
+        body: SafeArea( // SafeArea so that wig=dgets do not spill out
           child: Stack(
             children: <Widget>[
               Column(
@@ -26,11 +28,11 @@ class _ScreenOneState extends State<ScreenOne> {
                     padding: const EdgeInsets.fromLTRB(16, 0, 0, 0),
                     child: Row(
                       children: <Widget>[
-                        Icon(Icons.more_vert),
+                        Icon(Icons.more_vert), // More Icon 
                       ],
                     ),
                   ),
-                  SizedBox(
+                  SizedBox( // SizedBox for Spacing
                     height: 12,
                   ),
                   Row(
@@ -51,7 +53,7 @@ class _ScreenOneState extends State<ScreenOne> {
                     height: 12,
                   ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly, // so that widgets in the row are spaced evenly
                     children: <Widget>[
                       Column(
                         children: <Widget>[
@@ -100,7 +102,7 @@ class _ScreenOneState extends State<ScreenOne> {
                     children: <Widget>[
                       Padding(
                         padding: const EdgeInsets.only(bottom: 12),
-                        child: MyHomePage(),
+                        child: MyHomePage(), // Call Made to MyHomePage inside of which we have placed the DropDown Menu
                       ),
                     ],
                   ),
@@ -120,7 +122,7 @@ class _ScreenOneState extends State<ScreenOne> {
                 ],
               ),
               Align(
-                alignment: Alignment.bottomCenter,
+                alignment: Alignment.bottomCenter, // this helps to align in the bottom of the screen
                 child: Padding(
                   padding: const EdgeInsets.fromLTRB(0, 10, 0, 16),
                   child: Row(
